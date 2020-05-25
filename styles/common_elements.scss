@@ -1,0 +1,41 @@
+
+.title{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0;
+    &-black{
+        color: #060A24;
+    }
+
+    &-white{
+        color: white;
+    }
+}
+
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.paragraph{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+    
+.bottom {
+    border: 0;
+    width: 288px;
+    height: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #00F3BB;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
