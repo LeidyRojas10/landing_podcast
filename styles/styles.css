@@ -45,7 +45,80 @@
   padding-top: 10px;
   padding-bottom: 10px;
   position: absolute;
+  z-index: 2;
+}
+
+nav {
+  height: 44px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: right;
+  transition: all 1s ease;
+  position: relative;
   z-index: 1;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle:checked ~ .menu {
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hamburguer {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: -6px;
+  transition: inherit;
+}
+
+.hamburguer:after {
+  top: 6px;
+}
+
+.toggle:checked + .icon > .hamburguer {
+  background: #060A24;
+  transform: rotate(45deg);
+}
+
+.toggle:checked + .icon > .hamburguer:before {
+  background: #060A24;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.toggle:checked + .icon > .hamburguer:after {
+  background: #060A24;
+  top: 0;
+  transform: rotate(90deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

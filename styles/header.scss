@@ -1,3 +1,9 @@
+$background_nav: white;
+$background_item: #0000EC;
+$hamburguer_width: 18px;
+$icon_height: 2px;
+$x_color:#060A24;
+
 .logo{
     width: 24px;
     height:24px;
@@ -5,5 +11,79 @@
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
+    z-index: 2;
+}
+
+nav {
+    height: 44px;    
+    background: $background_nav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: right;
+    transition: all 1s ease;
+    position: relative;
     z-index: 1;
-    }
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle:checked ~ .menu {
+    display: block;
+}
+
+.icon {
+    display: inline-block;
+    width: $hamburguer_width;
+    height: $icon_height;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+  
+ .hamburguer {
+    display: block;
+    width: $hamburguer_width;
+    height: $icon_height;
+    background: black;
+    position: absolute;
+    top: 10px;
+    transition: all .3s ease-in-out;
+    box-sizing: border-box;
+}
+  
+  .hamburguer:before,
+  .hamburguer:after {
+    content: "";
+    display: block;
+    width: $hamburguer_width;
+    height:$icon_height;
+    background: black;
+    position: absolute;
+    top: -6px;
+    transition: inherit;
+}
+  
+  .hamburguer:after {
+    top: 6px;
+ }
+  
+  .toggle:checked + .icon>.hamburguer {
+    background:$x_color;
+    transform: rotate(45deg);
+}
+  
+  .toggle:checked + .icon>.hamburguer:before {
+    background:$x_color;
+    top: 0;
+    transform: rotate(90deg);
+}
+  
+  .toggle:checked + .icon>.hamburguer:after {
+    background:$x_color;
+    top: 0;
+    transform: rotate(90deg);
+}
