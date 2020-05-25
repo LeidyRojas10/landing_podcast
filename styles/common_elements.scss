@@ -1,17 +1,24 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 
-.title{
+%title{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0;
-    &-black{
+}
+.title-black{
+    @extend %title;
         color: #060A24;
     }
 
-    &-white{
+.title-white{
+    @extend %title;
         color: white;
     }
-}
+
 
 
 .line-through{

@@ -4,6 +4,13 @@ $hamburguer_width: 18px;
 $icon_height: 2px;
 $x_color:#060A24;
 
+header{
+width: 100vw;
+padding: 0;
+margin: 0;
+}
+
+
 .logo{
     width: 24px;
     height:24px;
@@ -14,18 +21,18 @@ $x_color:#060A24;
     z-index: 2;
 }
 
+ /* Inicia Barra de navegación */
 nav {
     height: 44px;    
     background: $background_nav;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: right;
     transition: all 1s ease;
     position: relative;
-    z-index: 1;
 }
 
+ /* Inicia Menú tipo hamburguesa first mobile */
 .toggle {
     display: none;
 }
@@ -41,16 +48,17 @@ nav {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    z-index: 1;
  }
 
-  
  .hamburguer {
     display: block;
     width: $hamburguer_width;
     height: $icon_height;
     background: black;
     position: absolute;
-    top: 10px;
+    top: 21px;
+    right: 19px;
     transition: all .3s ease-in-out;
     box-sizing: border-box;
 }
@@ -86,4 +94,42 @@ nav {
     background:$x_color;
     top: 0;
     transform: rotate(90deg);
+}
+ /* Finaliza Menú tipo hamburguesa first mobile */
+
+ /* Opciones del menú first mobile */
+.menu {
+    text-align: left;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: #0000EC;
+    margin-top: 44px;
+    padding: 0px;
+    z-index: 3;
+
+    & li {
+        flex: auto;
+    list-style: none;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    }
+
+    & li:last-child {
+        margin-bottom: 24px;
+    }
+
+}
+
+.menu_link {
+    text-decoration: none;
+    flex: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
 }
