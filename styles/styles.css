@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+/* first mobile */
 body {
   padding: 0;
   margin: 0;
@@ -36,17 +37,40 @@ body {
 
 .bottom {
   border: 0;
-  width: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 48px;
-  font-family: "IBM Plex Mono", monospace;
   background-color: #00F3BB;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  vertical-align: middle;
   font-size: 16px;
   color: #060A24;
   letter-spacing: 0;
   text-align: center;
   line-height: 22px;
+  text-decoration: none;
+}
+.bottom:hover {
+  color: white;
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
 
+.container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* Opciones desktop y tablet */
+@media screen and (min-width: 768px) {
+  .bottom {
+    font-size: 18px;
+    line-height: 24px;
+    height: 56px;
+    width: 226px;
+  }
+}
 header {
   width: 100vw;
   padding: 0;
@@ -217,9 +241,18 @@ nav {
   }
 
   .menu_link {
-    text-decoration: line-through;
+    text-decoration: none;
     flex: auto;
     color: #060A24;
+  }
+  .menu_link:hover {
+    font-weight: 500;
+    text-decoration: line-through;
+    color: #00F3BB;
+  }
+  .menu_link:active {
+    text-decoration: line-through;
+    color: rgba(6, 10, 36, 0.56);
   }
 }
 

@@ -180,8 +180,19 @@ nav {
     }
 
     .menu_link {
-        text-decoration: line-through;
+        text-decoration: none;
         flex: auto;
         color: #060A24;
+
+        &:hover{
+            font-weight: 500;
+            text-decoration: line-through;
+            color: #00F3BB;
+        }
+
+        &:active{
+            text-decoration: line-through;
+            color:rgba(6,10,36,0.56);
+        }
     }
 }
