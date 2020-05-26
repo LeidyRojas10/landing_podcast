@@ -58,8 +58,8 @@ body {
 }
 
 .container {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Opciones desktop y tablet */
@@ -69,6 +69,11 @@ body {
     line-height: 24px;
     height: 56px;
     width: 226px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 header {
@@ -215,14 +220,24 @@ nav {
     align-items: right;
     transition: all 1s ease;
     position: relative;
+    margin-right: 100px;
   }
 
   .icon {
     display: none;
   }
 
+  .toggle {
+    display: none;
+  }
+
+  .toggle:checked ~ .menu {
+    display: flex;
+  }
+
   .menu {
     width: 50%;
+    text-align: right;
     background: white;
     display: flex;
     align-items: center;
@@ -253,6 +268,37 @@ nav {
   .menu_link:active {
     text-decoration: line-through;
     color: rgba(6, 10, 36, 0.56);
+  }
+}
+/* first mobile */
+#introduction {
+  margin: 29px 16px 24px 16px;
+}
+#introduction h1 {
+  margin-bottom: 16px;
+}
+#introduction p {
+  margin-bottom: 36px;
+}
+
+/* Opciones desktop y tablet */
+@media screen and (min-width: 768px) {
+  #introduction {
+    margin: 120px 100px 5px 200px;
+  }
+  #introduction h1 {
+    margin-bottom: 0px;
+    font-size: 64px;
+  }
+  #introduction h1 br {
+    display: none;
+  }
+  #introduction h1 .dot {
+    color: #0000EC;
+  }
+  #introduction p {
+    margin-bottom: 56px;
+    width: 628px;
   }
 }
 

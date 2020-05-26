@@ -147,19 +147,29 @@ nav {
     nav {
         height: 80px;
         display: flex;
-         flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: flex-end;
         align-items: right;
         transition: all 1s ease;
         position: relative;
+        margin-right: 100px;
     } 
 
     .icon {
         display: none;
     }
 
+    .toggle {
+        display: none;
+    }
+    
+    .toggle:checked ~ .menu {
+        display: flex;
+    }
+    
     .menu {
         width: 50%;
+        text-align: right;
         background: white;
         display: flex;
         align-items: center;
@@ -183,6 +193,7 @@ nav {
         text-decoration: none;
         flex: auto;
         color: #060A24;
+    
 
         &:hover{
             font-weight: 500;

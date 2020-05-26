@@ -1,0 +1,38 @@
+ /* first mobile */
+#introduction{
+    margin: 29px 16px 24px 16px;
+
+    & h1{
+        margin-bottom: 16px;
+    }
+
+    & p{
+        margin-bottom: 36px;
+    }
+}
+
+/* Opciones desktop y tablet */
+
+@media screen and (min-width: 768px) {
+    #introduction{
+        margin: 120px 100px 5px 200px;
+    
+        & h1{
+            margin-bottom: 0px;
+            font-size: 64px;
+
+            & br{
+                display: none;
+            }
+
+            & .dot{
+                color:#0000EC;
+            }
+        }
+    
+        & p{
+            margin-bottom: 56px;
+            width: 628px;
+        }
+    }
+}
