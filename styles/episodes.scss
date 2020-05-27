@@ -13,7 +13,7 @@
     margin-right: 11px;
     margin-left: 11px;
    
-    & div {
+    & .podcast {
         margin-bottom: 11px;
         height: 232px;
         
@@ -28,12 +28,18 @@
 /* Opciones desktop y tablet */
 
 @media screen and (min-width: 768px) {
+
+    #podcast-3, #podcast-4 {
+        margin-bottom: 0px;
+    }
+
     #episodes{
+
+        padding-bottom: 10px;
  
         & h2 {
           padding-top: 186px;
           margin-left: 200px;
-          font-size: 48px;
         }
       }
       
@@ -47,9 +53,9 @@
         margin-right: 100px;
         margin-top: 26px;
          
-          & div {
+          & .podcast {
             margin-bottom: 72px;
-             width: 584px;
+            width: 584px;
              
               
               & iframe {

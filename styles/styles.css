@@ -73,6 +73,10 @@ body {
 
 /* Opciones desktop y tablet */
 @media screen and (min-width: 768px) {
+  .title-black, .title-white {
+    font-size: 48px;
+  }
+
   .bottom {
     font-size: 18px;
     line-height: 24px;
@@ -326,21 +330,27 @@ nav {
   margin-right: 11px;
   margin-left: 11px;
 }
-.podcast-container div {
+.podcast-container .podcast {
   margin-bottom: 11px;
   height: 232px;
 }
-.podcast-container div iframe {
+.podcast-container .podcast iframe {
   width: 100%;
   border: 0px;
 }
 
 /* Opciones desktop y tablet */
 @media screen and (min-width: 768px) {
+  #podcast-3, #podcast-4 {
+    margin-bottom: 0px;
+  }
+
+  #episodes {
+    padding-bottom: 10px;
+  }
   #episodes h2 {
     padding-top: 186px;
     margin-left: 200px;
-    font-size: 48px;
   }
 
   .podcast-container {
@@ -353,11 +363,11 @@ nav {
     margin-right: 100px;
     margin-top: 26px;
   }
-  .podcast-container div {
+  .podcast-container .podcast {
     margin-bottom: 72px;
     width: 584px;
   }
-  .podcast-container div iframe {
+  .podcast-container .podcast iframe {
     width: 100%;
     border: 0px;
   }
@@ -369,6 +379,7 @@ nav {
   right: 0;
   top: 0;
   height: 140px;
+  width: 100vw;
   z-index: 1;
   background-image: linear-gradient(352deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(100% 75%, 100% 0%, 0% 0%, 0% 100%);
@@ -405,5 +416,42 @@ nav {
 }
 
 /* Opciones desktop y tablet */
+@media screen and (min-width: 768px) {
+  .blue-polygon {
+    height: 230px;
+    clip-path: polygon(100% 40%, 100% 0%, 0% 0%, 0% 100%);
+    background-image: linear-gradient(345deg, #0000FF 0%, #0000A3 100%);
+  }
+
+  .phone-image {
+    width: 457.6px;
+    height: 660px;
+    padding-top: 64px;
+    margin-left: 200px;
+  }
+
+  #we_come {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #we_come h2 {
+    margin: 0px 0px 0px 0px;
+  }
+  #we_come h2 br {
+    display: none;
+  }
+  #we_come p {
+    margin: 24px 0px 0px 0px;
+  }
+
+  .we_come_content {
+    margin-left: 62.4px;
+    width: 464px;
+    height: 290px;
+    margin-top: 90px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

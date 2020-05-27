@@ -78,6 +78,12 @@ body{
 /* Opciones desktop y tablet */
 
 @media screen and (min-width: 768px) {
+
+    %title {
+       
+        font-size: 48px;
+      }
+
     .bottom {
         font-size: 18px;
         line-height: 24px;
