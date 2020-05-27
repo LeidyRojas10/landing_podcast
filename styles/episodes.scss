@@ -1,0 +1,63 @@
+ /* first mobile */
+#episodes{
+ 
+  & h2 {
+    padding-top: 64px;
+    margin-left: 16px;
+  }
+}
+
+.podcast-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 11px;
+    margin-left: 11px;
+   
+    & div {
+        margin-bottom: 11px;
+        height: 232px;
+        
+
+        & iframe {
+            width: 100%;
+            border: 0px;
+        }
+    }
+}
+
+/* Opciones desktop y tablet */
+
+@media screen and (min-width: 768px) {
+    #episodes{
+ 
+        & h2 {
+          padding-top: 186px;
+          margin-left: 200px;
+          font-size: 48px;
+        }
+      }
+      
+      .podcast-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 26px;
+         
+          & div {
+            margin-bottom: 72px;
+             width: 584px;
+             
+              
+              & iframe {
+                  width: 100%;
+                  border: 0px;
+              }
+          }
+      }
+
+
+}

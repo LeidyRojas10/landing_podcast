@@ -67,9 +67,11 @@ body{
 }
 
 .container_blue{
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0% 3%, 100% 0%, 100% 100%,0% 100%);
 }
 
 /* Opciones desktop y tablet */
@@ -85,5 +87,9 @@ body{
     .paragraph{
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .container_blue{
+        clip-path: polygon(0% 13%, 100% 0%, 100% 100%,0% 100%);
     }
 }
