@@ -399,7 +399,7 @@ nav {
   margin: 27px 16px 8px 16px;
 }
 #we_come p {
-  margin: 0px 16px 54px 16px;
+  margin: 0px 16px 0px 16px;
 }
 
 /* Opciones desktop y tablet */
@@ -439,8 +439,17 @@ nav {
 }
 /* first mobile */
 #guests h2 {
-  padding-top: 64px;
-  margin-left: 16px;
+  margin: 54px 16px 14px 16px;
+}
+#guests .guest_images_content {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#guests .guest_image {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

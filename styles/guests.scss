@@ -1,9 +1,22 @@
 /* first mobile */
 
 #guests{
-    
+
   & h2 {
-    padding-top: 64px;
-    margin-left: 16px;
+    margin: 54px 16px 14px 16px;
   }
+
+  & .guest_images_content{
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  & .guest_image{
+      width: 100%;
+      height: auto;
+  }
+  
 }
+
