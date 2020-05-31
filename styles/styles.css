@@ -452,4 +452,24 @@ nav {
   height: auto;
 }
 
+/* Opciones desktop y tablet */
+@media screen and (min-width: 768px) {
+  #guests h2 {
+    margin: 64px 0px 36px 200px;
+  }
+  #guests br {
+    display: none;
+  }
+  #guests .guest_images_content {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 3fr));
+  }
+  #guests .guest_image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

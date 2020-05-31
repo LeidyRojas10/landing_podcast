@@ -20,3 +20,31 @@
   
 }
 
+ /* Opciones desktop y tablet */
+
+ @media screen and (min-width: 768px) {
+    #guests{
+
+        & h2 {
+          margin: 64px 0px 36px 200px;
+        }
+
+        & br{
+            display: none;
+        }
+    
+      
+        & .guest_images_content{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(480px, 3fr));
+        }
+      
+        & .guest_image{
+            width: 100%;
+            height: auto;
+        }    
+    }
+
+}
