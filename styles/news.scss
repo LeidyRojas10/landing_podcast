@@ -1,6 +1,5 @@
 /* first mobile */
 
-
 #news {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
     padding-bottom: 67px;
@@ -21,6 +20,31 @@
 /* Opciones desktop y tablet */
 
 @media screen and (min-width: 768px) {
+
+#news {
+    clip-path: polygon(0% 27%, 100% 0%, 100% 100%, 0% 100%);
+    padding-bottom: 151px;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+        text-align: center;
+        margin: 0px 16px 36px 16px;
+        padding-top: 213px;
+    }
+
+    & br{
+        display: none;
+    }
+
+    & .bottom {
+        margin: 0px 16px 0px 16px;
+        width: 345px;
+    }
+
+}
 
     
 }
