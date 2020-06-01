@@ -51,3 +51,34 @@
 
     }
 }
+
+
+/* Opciones desktop y tablet */
+
+#topics_section {
+
+    & h2 {
+        margin: 64px 0px 56px 200px;
+      }
+
+      & br{
+        display: none;
+    }
+
+    & .topics_container {
+        flex-direction: row;
+        margin-top: 0px;
+        margin-left: 220px;
+
+        & .topic_text{
+            margin-top: 29px;
+        }
+
+
+        & .topic, .topic_2, .topic:first-child {
+            width: 220px;
+            margin: 0px 40px 0 0px;
+        }
+
+    }
+}
