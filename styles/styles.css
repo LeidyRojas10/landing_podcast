@@ -576,9 +576,55 @@ nav {
 }
 /* first mobile */
 footer {
-  display: inline grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 38px;
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer_title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-weight: 300;
+  margin: 24px 46px 16px 47px;
+  padding: 0px;
+}
+footer .footer_icons-container {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_icons-container i {
+  font-size: 16px;
+  line-height: 28px;
+  color: #060A24;
+}
+
+/* Opciones desktop y tablet */
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 95px;
+  }
+  footer .footer_title {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 36px 0px 31px 100px;
+    padding: 0px;
+  }
+  footer .footer_icons-container {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-right: 100px;
+  }
+  footer .footer_icons-container i {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
